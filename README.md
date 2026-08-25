@@ -74,17 +74,25 @@ pnpm dev
 Open your browser:
 Visit http://localhost:5173 to view the app.
 
-🤖 AI Collaboration & Development
-This project was built collaboratively through a human-AI workflow. The CSS styling and layout architecture were iteratively designed and supervised by me using Gemini as a technical pair-programmer and design assistant.
+```
+---
+
+## 🤖 AI Collaboration & Development
+
+This project was built collaboratively through a human-AI workflow. The CSS styling and layout architecture were iteratively designed and supervised by me using **Gemini** as a technical pair-programmer and design assistant. 
 
 Every design choice, color scheme adjustment, code review, and implementation step was thoroughly reviewed, tested, and integrated by me to ensure full comprehension and ownership of the codebase.
 
-👤 Author
-Ronald Palacios
+---
 
-GitHub: @Rapdev12
+## 👤 Author
 
-LinkedIn: Ronald Palacios
+**Ronald Palacios**
+- GitHub: [@Rapdev12](https://github.com/Rapdev12/Rapdev12)
+- LinkedIn: [Ronald Palacios](https://www.linkedin.com/in/ronald-palacios-311a6b155/)
 
-📝 License
-This project is open source and available under the MIT License.
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
