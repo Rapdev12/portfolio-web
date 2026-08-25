@@ -48,14 +48,43 @@ portfolio-web/
 ├── index.html
 ├── package.json
 └── pnpm-lock.yaml
+💻 Getting Started
+To run this project locally on your machine, follow these steps:
 
+Clone the repository:
 
----
+Bash
+git clone [https://github.com/Rapdev12/portfolio-web.git](https://github.com/Rapdev12/portfolio-web.git)
+Navigate to the project directory:
 
-## 🤖 AI Collaboration & Development
+Bash
+cd portfolio-web
+Install dependencies:
 
-This project was built collaboratively through a human-AI workflow. The CSS styling and layout architecture were iteratively designed and supervised by me using **Gemini** as a technical pair-programmer and design assistant. 
+Bash
+npm install
+# or using pnpm:
+pnpm install
+Run the development server:
+
+Bash
+npm run dev
+# or:
+pnpm dev
+Open your browser:
+Visit http://localhost:5173 to view the app.
+
+🤖 AI Collaboration & Development
+This project was built collaboratively through a human-AI workflow. The CSS styling and layout architecture were iteratively designed and supervised by me using Gemini as a technical pair-programmer and design assistant.
 
 Every design choice, color scheme adjustment, code review, and implementation step was thoroughly reviewed, tested, and integrated by me to ensure full comprehension and ownership of the codebase.
 
----
+👤 Author
+Ronald Palacios
+
+GitHub: @Rapdev12
+
+LinkedIn: Ronald Palacios
+
+📝 License
+This project is open source and available under the MIT License.
