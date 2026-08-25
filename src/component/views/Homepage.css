@@ -1,161 +1,220 @@
-/* HOMEPAGE PAGE */
-
 .homepage-page {
-  width: 85%;
-  margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  color: #18181b;
+  width: 90%;          
+  max-width: 1280px;   
+  margin: 0 auto;      
+  padding-bottom: 80px;
+  color: #0f172a;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;          /* Un poco más de espacio entre el texto y el editor */
+  align-items: center;
+  margin-top: 24px;   /* Separa el contenido un poco más de arriba */
+  margin-bottom: 80px;;
 }
 
-
-/* HOMEPAGE INTRO */
-
-.homepage-page h1 {
-  margin: 0;
-  font-size: 44px;
-  max-width: 720px;
-  line-height: 1.15;
+/* Si la pantalla es chica (móvil o tablet), se ponen uno debajo del otro automáticamente */
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
-/* La palabra en negrita del titular se pinta violeta:
-   rompe la monotonía y genera foco inmediato */
-.homepage-page h1 strong {
-  color: #6d28d9;
-}
-
-.homepage-page > p {
-  width: 70%;
-  margin-top: 20px;
-  color: #52525b;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-.homepage-page > p a {
-  color: #6d28d9;
+/* Badge superior */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background-color: #f3e8ff;
+  color: #7c3aed;
+  border-radius: 50px;
+  font-size: 13px;
   font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s ease;
+  margin-bottom: 20px;
+  border: 1px solid #e9d5ff;
 }
 
-.homepage-page > p a:hover {
-  color: #4c1d95;
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #7c3aed;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
 }
 
-
-/* LATEST PROJECTS SECTION */
-
-.latest-work {
-  margin-top: 70px;
+/* Título y acento */
+.homepage-page h1 .highlight {
+  color: #7c3aed;
 }
 
-.latest-work h2 {
-  margin: 0;
-  font-size: 28px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #e9d5ff;
+/* =========================================
+   DISEÑO DEL EDITOR DE CÓDIGO (MOCKUP)
+   ========================================= */
+.code-editor {
+  background-color: #0f172a; /* Fondo oscuro idéntico al de tu footer */
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace; /* Fuente de código clásica */
+  font-size: 14px;
+  color: #e2e8f0;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-.latest-work > p {
-  max-width: 600px;
-  margin-top: 10px;
-  color: #52525b;
+/* Cabecera del editor con los 3 botoncitos de ventana */
+.editor-header {
+  background-color: #1e293b;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #334155;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.editor-title {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #94a3b8;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Cuerpo con el código de mentiritas */
+.editor-body {
+  padding: 20px;
   line-height: 1.6;
+  margin: 0;
 }
 
+.editor-body p {
+  margin: 0;
+}
 
-/* PROJECT CARD
-   La sombra es la clave anti-plano:
-   simula una "lámina" flotando sobre el fondo lavanda */
+.indent {
+  padding-left: 20px;
+}
 
+/* Colores de sintaxis sencillos (para que parezca real) */
+.keyword { color: #c084fc; }  /* Morado */
+.variable { color: #60a5fa; } /* Celeste */
+.property { color: #34d399; } /* Verde */
+.string { color: #f472b6; }    /* Rosa */
 
+/* Animación simple del cursor parpadeando */
+.cursor {
+  color: #a78bfa;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Hacemos que la línea inferior del título mida solo lo que ocupa el texto y no cruce de lado a lado */
+.latest-work h2 {
+  display: inline-block; /* Contrae el borde al ancho exacto del texto */
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #7c3aed; 
+}
+
+/* GRID Y TARJETAS DE PROYECTOS */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 60px;
-  margin-top: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 36px;
 }
 
 .project-card {
   width: 100%;
-  padding: 25px;
-  background-color: #ffffff;
-  border: 1px solid #e9d5ff;
-  border-radius: 15px;
-  box-shadow: 0 4px 14px rgba(109, 40, 217, 0.10);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(109, 40, 217, 0.18);
-}
+/* Hover de la tarjeta con tu violeta unificado */
+
 
 .project-card img {
   width: 100%;
-  height: 180px;
+  height: 190px;
   object-fit: cover;
   border-radius: 10px;
-  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.02);
 }
 
 .project-card h3 {
-  margin-top: 18px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .project-card p {
-  color: #52525b;
+  color: #475569;
   line-height: 1.6;
+  font-size: 15px;
 }
 
 .project-card strong {
-  color: #3f3f46;
+  color: #1e293b;
+  font-weight: 600;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #7c3aed; /* <--- ¡Aquí entra el morado de tu marca al hacer hover! */
+  box-shadow: 0 20px 25px -5px rgba(124, 58, 237, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Botón dentro de la tarjeta */
+
 .project-card a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 13px 22px;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(180deg, #7c3aed, #6d28d9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #0f172a;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(109, 40, 217, 0.25);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .project-card a:hover {
+  background: #7c3aed; /* Pasa al violeta al poner el mouse encima */
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(109, 40, 217, 0.35);
-}
-
-
-/* MOBILE VERSION */
-@media (max-width: 768px) {
-  .homepage-page {
-    width: 90%;
-  }
-
-  .homepage-page h1 {
-    font-size: 32px;
-  }
-
-  .homepage-page > p {
-    width: 100%;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;   /* 1 columna en móvil */
-  }
-
-  .project-card {
-    width: 100%;
-  }
 }

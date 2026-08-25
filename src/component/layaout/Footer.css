@@ -1,0 +1,98 @@
+/* FOOTER OSCURO DE ALTO CONTRASTE */
+.footer {
+  width: 100%;
+  background-color: #0f172a; /* Fondo oscuro imponente (negro azulado moderno) */
+  color: #f8fafc; /* Texto principal en blanco claro */
+  margin-top: 100px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-top: 1px solid #1e293b;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.footer-content {
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* BLOQUE DE MARCA (LOGO + TEXTO) */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;;
+}
+
+.footer-brand .logo-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  /* Incontestable: invertimos o aclaramos el icono para que resalte perfecto en el fondo oscuro */
+  filter: invert(1) brightness(2); 
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  display: flex;
+  gap: 6px;;
+}
+
+.footer-brand h3 span:nth-child(1) {
+  color: #ffffff; /* Ronald en blanco nítido */
+}
+
+.footer-brand h3 span:nth-child(2) {
+  color: #a78bfa; 
+}
+
+.footer-brand p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #94a3b8; /* Gris suave legible */
+  font-weight: 500;
+}
+
+/* ENLACES SOCIALES Y DE NAVEGACIÓN EN OSCURO */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-social a {
+  color: #cbd5e1; /* Texto claro para los enlaces */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social a:hover,
+.footer-social a.active {
+  color: #a78bfa; /* Un violeta claro y brillante que destaca perfectamente sobre fondo oscuro */
+  transform: translateY(-1px);
+}
+
+/* BARRA INFERIOR DE COPYRIGHT */
+.footer-bottom {
+  border-top: 1px solid #1e293b; /* Línea divisoria oscura y fina */
+  padding: 22px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.footer-bottom p {
+  margin: 0;
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+}

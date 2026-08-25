@@ -1,15 +1,26 @@
 import { NavLink } from "react-router";
+import "./Footer.css"
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <span className="footer-icon">R</span>
-
+          <img
+            src="/imagen-rp.svg"
+            alt="Logo Ronald Palacios"
+            className="logo-icon"
+          />
           <div>
-            <h3>Ronald Palacios</h3>
+            <h3>
+              
+              <span>Ronald</span>
+              <span>Palacios</span>
+
+            </h3>
+
             <p>Desarrollador web</p>
+
           </div>
         </div>
 
