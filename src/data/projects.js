@@ -1,5 +1,7 @@
 import logoPortfolio from "../../public/laptop-with-glowing-screen-table-dark-top-view-copy-space.jpg"
 import logoPelisweb from "../../public/Screenshot 2026-08-22 at 20-33-51 pelisweb.png"
+import logoOpusClassicWeb from "../../public/OpusClassicWeb.png"
+
 
 export const projects = [
   {
@@ -19,12 +21,12 @@ export const projects = [
     link: "https://github.com/Rapdev12/Master-en-React/tree/main/06-proyecto-Pelisweb/PelisWeb",
   },
   {
-    title: "Project Three",
-    image: "/project-three.png",
-    description: "Descripción resumida para el Home.",
-    details: "Descripción extendida y detalle técnico para el Portfolio.",
-    tech: "React, Node.js, Database",
-    link: "https://github.com/your-username/project-one",
+    title: "Opus Classic",
+    image: logoOpusClassicWeb,
+    description: "Interactive web platform dedicated to classical music, exploring symphonic works, sheet music, and the history of historical composers like Ludwig van Beethoven.",
+    details: "Developed as a full-stack web application featuring a modern, fluid front-end interface connected to a robust RESTful API back-end for data management",
+    tech: "React, Vite, Node.js, TypeScript, REST API, CSS3",
+    link: "https://github.com/Rapdev12/Master-en-React/tree/main/15-Proyecto%203",
   },
 
 ];
