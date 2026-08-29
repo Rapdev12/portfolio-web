@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./HeaderNav.css";
+import LogoRp from "../../../public/logoRonald.svg"
 
 function HeaderNav() {
     return (
         <header className="header">
             <div className="header-inner">
                 <div className="logo">
-                    <img src="/imagen-rp.svg" alt="Logo Ronald Palacios" className="logo-icon" />
+                    <img src={LogoRp} alt="Logo Ronald Palacios" className="logo-icon" />
                     <h3>
                         <span>Ronald</span>
                         <span>Palacios</span>

@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Footer.css"
+import LogoRp from "../../../public/logoRonald.svg"
+
 
 function Footer() {
   return (
@@ -7,7 +9,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <img
-            src="/imagen-rp.svg"
+            src={LogoRp}
             alt="Logo Ronald Palacios"
             className="logo-icon"
           />
