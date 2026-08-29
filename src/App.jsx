@@ -1,5 +1,4 @@
-
-import { BrowserRouter } from 'react-router';
+import { HashRouter } from 'react-router-dom'
 import './App.css'
 import MyRoutes from './router/MyRoutes';
 
@@ -8,9 +7,9 @@ function App() {
 
   return (
     <div className="layaout">
-      <BrowserRouter>
+      <HashRouter>
         <MyRoutes />
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   )
