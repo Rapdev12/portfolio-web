@@ -1,10 +1,10 @@
 import logoPelisweb from "../../public/Screenshot 2026-08-22 at 20-33-51 pelisweb.png"
 import logoOpusClassicWeb from "../../public/OpusClassicWeb.png"
 import logoBubbleweb from "../../public/Captura desde 2026-11-23 11-54-39.png"
-
+import logoPortfolio from "../../public/laptop-with-glowing-screen-table-dark-top-view-copy-space.jpg"
 
 export const projects = [
-  
+
   {
     title: "Pelisweb",
     image: logoPelisweb,
@@ -28,5 +28,13 @@ export const projects = [
     details: "Developed as a full-stack web application featuring a modern, fluid front-end interface connected to a robust RESTful API back-end for data management",
     tech: "React, Vite, Node.js, TypeScript, REST API, CSS3,MongoDB",
     link: "https://github.com/Rapdev12/Master-en-React/tree/main/16-Proyecto-SocialMedia",
+  },
+  {
+    title: "Portfolio",
+    image: logoPortfolio,
+    description: "Personal and professional website developed as part of the Master's in React.",
+    details: "Interactive application built with reusable components, focused on efficient state management, optimized performance, and responsive design",
+    tech: "React, Vite, JavaScript, CSS",
+    link: "https://github.com/Rapdev12/Master-en-React/tree/main/08-proyecto-Portfolio",
   },
 ];
